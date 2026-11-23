@@ -149,7 +149,7 @@ export default function HellasDirect() {
           <span className="status">In progress</span>
         </div>
       </main>
-      <Footer />
+      <Footer connect={false} />
     </div>
   );
 }

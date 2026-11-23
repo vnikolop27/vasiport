@@ -1,8 +1,9 @@
 import { LINKEDIN_URL } from "@/lib/site";
 
-export default function Footer() {
+export default function Footer({ connect = true }: { connect?: boolean }) {
   return (
     <>
+      {connect && (
       <section className="connect" aria-labelledby="connect-title">
         <p className="mono">Let’s connect</p>
         <div>
@@ -12,6 +13,7 @@ export default function Footer() {
           </a>
         </div>
       </section>
+      )}
       <footer className="site mono">
         <span>© {new Date().getFullYear()} Vasilios Nikolopoulos</span>
         <a href="#top">Back to top ↑</a>

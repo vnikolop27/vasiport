@@ -46,13 +46,15 @@ export default function Home() {
     <div className="wrap" id="top">
       <Header />
       <main>
-        <h1 className="intro">
-          Vasili is a UX and Product Designer. With a background in Visual Arts he learned to look beyond the
-          obvious, and pay attention to the details that shape digital experiences
-          <span className="eyes">
+        <div className="intro-row">
+          <h1 className="intro">
+            Vasili is a UX and Product Designer. With a background in Visual Arts he learned to look beyond the
+            obvious, and pay attention to the details that shape digital experiences
+          </h1>
+          <span className="eyes" aria-hidden="true">
             <GooglyEyes />
           </span>
-        </h1>
+        </div>
 
         <section className="work" id="work" aria-labelledby="work-title">
           <h2 className="label" id="work-title">
