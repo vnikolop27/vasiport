@@ -158,3 +158,12 @@ footer.site{margin-top:96px}
   .xp li{grid-template-columns:1fr auto;gap:2px 16px}
   .xp li span:nth-child(2){grid-column:1;grid-row:2;color:var(--muted)}
 }
+
+/* ---------- case study: white and gray (no green accents) ---------- */
+.cs{--green:#8f8f8b;--tint:#efeeec}
+.cs .note,.cs .shot{background:#fff}
+.cs .note.pos{background:var(--tint);border-color:#e0dedb}
+.cs .sw.pos{background:var(--tint);border-color:#e0dedb}
+.cs .affinity{background:#fafafa}
+.cs .menu .new{color:var(--ink);font-weight:500;text-decoration:underline;text-decoration-color:#bdbdb9;text-underline-offset:3px}
+.cs .legend i{width:16px;height:0;border-radius:0;background:none;border-bottom:1.5px solid #bdbdb9;vertical-align:4px}

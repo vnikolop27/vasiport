@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 /* eslint-disable @next/next/no-img-element */
 export default function HellasDirect() {
   return (
-    <div className="wrap" id="top">
+    <div className="wrap cs" id="top">
       <Header />
       <main id="content">
 
@@ -29,7 +29,6 @@ export default function HellasDirect() {
     <div className="stats">
       <div className="stat"><b>+15%</b><span className="mono">Navigation success (Google Analytics)</span></div>
       <div className="stat"><b>7</b><span className="mono">Competitors analyzed</span></div>
-      <div className="stat"><b>2</b><span className="mono">Menu groups I designed, live on the site today</span></div>
     </div>
 
     <section className="row">
