@@ -48,7 +48,7 @@ export default function HellasDirect() {
           <figcaption className="mono">Header, June 2025</figcaption>
         </figure>
         <figure style={{marginTop:20}}>
-          <div className="shot"><img src="/work/hellas/before-footer.webp" alt="Old footer columns: Car, Home, Wallet+, Services (claims, offers, Fast Track, FlexiPay, payment methods, Help Center) and Info." width="820" height="300" /></div>
+          <div className="shot site-footer" role="img" aria-label="Old footer columns: Car, Motorcycle, Home, Wallet+, Services and Info."><div><h4>Car</h4><ul><li>Insurance</li><li>Covers</li><li>Partner garages</li><li>Policy terms</li><li>FAQs</li><li>Refer a friend</li></ul><h4 style={{ marginTop: 14 }}>Motorcycle</h4><ul><li>Insurance</li><li>Covers</li><li>Partner garages</li><li>Policy terms</li><li>FAQs</li></ul></div><div><h4>Home</h4><ul><li>Insurance</li><li>Covers</li><li>Policy terms</li><li>FAQs</li><li>ENFIA</li></ul><h4 style={{ marginTop: 14 }}>Wallet+</h4><ul><li>Financing</li><li>Partner garages</li><li>FAQs</li></ul></div><div className="hot"><h4>Services</h4><ul><li>Vehicle claims</li><li>Home claims</li><li>Offers &amp; Partnerships</li><li>Fast Track</li><li>FlexiPay</li><li>Payment methods</li><li>Contact details</li><li>Help Center</li></ul></div><div><h4>Info</h4><ul><li>About us</li><li>SFC Reports</li><li>Careers</li><li>Safe Roads Project</li><li>News</li><li>Blog</li></ul></div></div>
           <figcaption className="mono">Footer, June 2025: services only lived here</figcaption>
         </figure>
       </div>
@@ -81,7 +81,7 @@ export default function HellasDirect() {
             <div className="step-head"><span className="mono">02</span><h3>Grouped the menu by what people come to do.</h3></div>
             <p>Insurance for buying cover. Services for managing it. Info for getting help.</p>
             <figure>
-              <div className="shot pad"><img src="/work/hellas/concept-menu.webp" alt="Proposed menu: Insurance (Home, Car, Motorcycle, Trailer), Info (Partner Garages, ENFIA, Help Center, Payment Methods), Services (Flexipay, Fast Track, Offers & Partnerships, Refer a friend)." width="608" height="263" /></div>
+              <div className="shot pad"><div className="proposed-menu" role="img" aria-label="Proposed menu: Insurance, Info and Services groups."><div><h4>Insurance</h4><ul><li>Home</li><li>Car</li><li>Motorcycle</li><li>Trailer</li></ul></div><div><h4>Info</h4><ul><li>Partner Garages</li><li>ENFIA</li><li>Help Center</li><li>Payment Methods</li></ul></div><div><h4>Services</h4><ul><li>Flexipay</li><li>Fast Track</li><li>Offers &amp; Partnerships</li><li>Refer a friend</li></ul></div></div></div>
               <figcaption className="mono">Proposed menu</figcaption>
             </figure>
           </li>
@@ -89,7 +89,15 @@ export default function HellasDirect() {
             <div className="step-head"><span className="mono">03</span><h3>Simplified the header around it.</h3></div>
             <p>One Insurance dropdown and Claims one click away, instead of a row of product links.</p>
             <figure>
-              <div className="shot"><img src="/work/hellas/concept-nav.webp" alt="Proposed header: Insurance dropdown, Claims, wallet+, About us." width="1320" height="160" /></div>
+              <div className="shot proposed-header" role="img" aria-label="Proposed header: Hellas Direct logo, Insurance dropdown, Claims, wallet+, About us.">
+                <img className="hd-logo" src="/work/hellas/hd-logo.png" alt="" width={447} height={179} />
+                <nav aria-hidden="true">
+                  <span>Insurance <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 4.5 6 8l3.5-3.5" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" /></svg></span>
+                  <span>Claims</span>
+                  <span>wallet+</span>
+                  <span>About us</span>
+                </nav>
+              </div>
               <figcaption className="mono">Proposed header</figcaption>
             </figure>
           </li>

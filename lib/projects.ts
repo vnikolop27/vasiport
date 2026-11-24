@@ -17,7 +17,7 @@ export type Project = {
   peek?: { src: string; left: string; top: string; width: string };
   // White frame coming in from the bottom right that grows on hover
   // (its top-left corner, in % of the Figma frame).
-  frame?: { left: string; top: string };
+  frame?: { left: string; top: string; src?: string };
   tint: string; // placeholder background
 };
 
@@ -45,7 +45,7 @@ export const projects: Project[] = [
     subtitle: "An AI agent that matches portfolios to the right jobs",
     tags: ["Product design", "AI agent", "Job matching"],
     inProgress: true,
-    frame: { left: "25.26%", top: "35.41%" },
+    frame: { left: "25.26%", top: "35.41%", src: "/work/thumbs/matchwise-ui.webp" },
     tint: "#304ac7",
   },
   {

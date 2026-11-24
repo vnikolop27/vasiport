@@ -20,7 +20,12 @@ function Card({ p, index }: { p: Project; index: number }) {
             style={{ left: p.peek.left, top: p.peek.top, width: p.peek.width }}
           />
         ) : p.frame ? (
-          <span className="frame-in" style={{ left: p.frame.left, top: p.frame.top }} />
+          <span className="frame-in" style={{ left: p.frame.left, top: p.frame.top }}>
+            {p.frame.src && (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img src={p.frame.src} alt="" width={1000} height={634} />
+            )}
+          </span>
         ) : p.thumbnail ? (
           // eslint-disable-next-line @next/next/no-img-element
           <img src={p.thumbnail} alt="" width={1140} height={836} />

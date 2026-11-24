@@ -176,3 +176,32 @@ a.card:hover .thumb img.peek,a.card:focus-visible .thumb img.peek{transform:tran
 .frame-in{position:absolute;right:0;bottom:0;background:#fff;transform-origin:100% 100%;transition:transform .5s cubic-bezier(.2,.7,.2,1)}
 .card:hover .frame-in{transform:scale(1.08)}
 @media (prefers-reduced-motion:reduce){.thumb img.peek,.frame-in{transition:none}}
+
+/* Matchwise: product UI inside the white frame */
+.frame-in{overflow:hidden}
+.frame-in img{position:absolute;top:0;left:0;width:100%;height:auto;object-fit:initial;transform:none}
+a.card:hover .frame-in img{transform:none}
+
+/* Googly eyes: blink while hovered */
+.gl-lid{transform:scaleY(0);transform-box:fill-box;transform-origin:50% 0}
+.eyes:hover .gl-lid{animation:gl-blink 1.8s ease-in-out infinite}
+@keyframes gl-blink{0%{transform:scaleY(0)}7%{transform:scaleY(1)}14%{transform:scaleY(0)}100%{transform:scaleY(0)}}
+@media (prefers-reduced-motion:reduce){.eyes:hover .gl-lid{animation:none}}
+
+/* Hellas Direct case study: sharp text versions of the screenshots */
+.site-footer{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;padding:26px 28px;font-family:'Instrument Sans',system-ui,sans-serif;font-size:14px;line-height:1.5}
+.site-footer h4,.proposed-menu h4{margin:0 0 8px;font-size:14.5px;font-weight:500}
+.site-footer ul,.proposed-menu ul{list-style:none;margin:0;padding:0}
+.site-footer li{padding:2px 0;color:#3d403a}
+.site-footer .hot{background:#f3f2f0;margin:-10px;padding:10px;border-radius:6px}
+.proposed-menu{display:grid;grid-template-columns:repeat(3,auto);justify-content:center;gap:12px 56px;text-align:center;font-size:15px;line-height:1.5;padding:12px 0}
+.proposed-menu li{padding:3px 0}
+.proposed-header{display:flex;align-items:center;gap:clamp(24px,6vw,96px);padding:18px 28px}
+.proposed-header .hd-logo{width:96px;height:auto;flex:none}
+.proposed-header nav{display:flex;flex-wrap:wrap;gap:8px 32px;font-size:15px}
+.proposed-header nav span{display:inline-flex;align-items:center;gap:5px}
+@media(max-width:760px){
+  .site-footer{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 16px;padding:20px}
+  .proposed-menu{grid-template-columns:1fr;gap:20px}
+  .proposed-header{flex-direction:column;align-items:flex-start;gap:14px}
+}

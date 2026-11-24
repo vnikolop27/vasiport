@@ -87,6 +87,11 @@ export default function GooglyEyes({ size = 112 }: { size?: number }) {
           <stop offset="0%" stopColor="#FBFBF4" />
           <stop offset="100%" stopColor="#DCDCCF" />
         </radialGradient>
+        {EYES.map((_, i) => (
+          <clipPath key={i} id={`eye-clip-${i}`}>
+            <ellipse rx={SCLERA_RX} ry={SCLERA_RY} />
+          </clipPath>
+        ))}
       </defs>
 
       {EYES.map((eye, i) => (
@@ -108,6 +113,18 @@ export default function GooglyEyes({ size = 112 }: { size?: number }) {
             <circle r={5} fill="#141414" />
             <circle cx={2.75} cy={-2.75} r={1.75} fill="#FFFFFF" />
           </g>
+          {/* eyelid: closes from the top when the eyes are hovered */}
+          <g clipPath={`url(#eye-clip-${i})`}>
+            <rect
+              className="gl-lid"
+              x={-SCLERA_RX - 1}
+              y={-SCLERA_RY - 1}
+              width={SCLERA_RX * 2 + 2}
+              height={SCLERA_RY * 2 + 2}
+              fill="#D6CFC1"
+            />
+          </g>
+          <ellipse rx={SCLERA_RX} ry={SCLERA_RY} fill="none" stroke="#C9C9BC" strokeWidth={0.75} />
         </g>
       ))}
     </svg>
