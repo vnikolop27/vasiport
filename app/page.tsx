@@ -8,18 +8,19 @@ import { projects, type Project } from "@/lib/projects";
 function Card({ p, index }: { p: Project; index: number }) {
   const inner = (
     <>
-      <div className={`thumb${p.hover === "zoom" ? " zoom" : ""}`} style={{ background: p.tint }}>
-        {p.laptop ? (
-          <div className="laptop" aria-hidden="true">
-            <div className="lid">
-              <span className="cam" />
-              <div className="screen">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={p.laptop} alt="" width={960} height={4439} />
-              </div>
-            </div>
-            <div className="base" />
-          </div>
+      <div className="thumb" style={{ background: p.tint }}>
+        {p.peek ? (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
+            className="peek"
+            src={p.peek.src}
+            alt=""
+            width={988}
+            height={948}
+            style={{ left: p.peek.left, top: p.peek.top, width: p.peek.width }}
+          />
+        ) : p.frame ? (
+          <span className="frame-in" style={{ left: p.frame.left, top: p.frame.top }} />
         ) : p.thumbnail ? (
           // eslint-disable-next-line @next/next/no-img-element
           <img src={p.thumbnail} alt="" width={1140} height={836} />
