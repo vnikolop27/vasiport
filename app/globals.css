@@ -104,7 +104,7 @@ nav.top a[aria-current=page]{text-decoration:underline;text-underline-offset:4px
 /* ---------- home ---------- */
 .intro-row{display:flex;align-items:flex-end;gap:28px;margin:110px 0 0}
 .intro{font-size:clamp(23px,3.2vw,38px);line-height:1.3;font-weight:400;max-width:44ch;margin:0;letter-spacing:-.005em}
-.intro-row .eyes{flex:none;width:96px;margin-bottom:0;margin-bottom:0;transform:translateY(40px)}
+.intro-row .eyes{flex:none;width:96px;margin-bottom:0;margin-bottom:0;transform:translateY(80px)}
 .intro-row .eyes svg{display:block;width:100%;height:auto}
 
 .work{padding-top:130px;scroll-margin-top:24px}
