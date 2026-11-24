@@ -12,6 +12,10 @@ export type Project = {
   href?: string; // case study page; leave out while in progress
   inProgress?: boolean;
   thumbnail?: string;
+  // Show a tall screenshot inside a laptop frame; on hover it scrolls to the bottom.
+  laptop?: string;
+  // Hover effect for the thumbnail: "zoom" scales the whole frame up slightly.
+  hover?: "zoom";
   tint: string; // placeholder background
 };
 
@@ -22,6 +26,7 @@ export const projects: Project[] = [
     subtitle: "Moving key services out of the footer and into the main menu",
     tags: ["Information architecture", "Navigation"],
     href: "/work/hellas-direct",
+    laptop: "/work/thumbs/hellas-screen.webp",
     tint: "#e4ecf2",
   },
   {
@@ -38,6 +43,7 @@ export const projects: Project[] = [
     subtitle: "An AI agent that matches portfolios to the right jobs",
     tags: ["Product design", "AI agent", "Job matching"],
     inProgress: true,
+    hover: "zoom",
     tint: "#e7ebe1",
   },
   {
