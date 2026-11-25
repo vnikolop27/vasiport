@@ -117,6 +117,43 @@ export default function SchoolOfLeadership() {
         </section>
 
         <section className="row">
+          <p className="mono">Ideation</p>
+          <div className="body">
+            <h2>How the team got there</h2>
+            <p>
+              The groundwork was shared. Harshita Dandu led the design system; I owned About us and Get in Touch.
+            </p>
+            <ol className="flow">
+              <li><span className="mono">01</span><b>Site audit</b><p>Strong credibility signals, but built for exploring, not acting: no metrics, no partner path, “Learn More” everywhere.</p></li>
+              <li><span className="mono">02</span><b>8 interviews</b><p>Students, parents, schools, companies and funders, each watched using the live site.</p></li>
+              <li><span className="mono">03</span><b>Landscape audit</b><p>Four youth, mission-driven sites. They lead with story, clear value and action-first CTAs.</p></li>
+              <li><span className="mono">04</span><b>Explore → Evaluate → Act</b><p>One architecture every audience moves through, from programs to proof to a next step.</p></li>
+              <li><span className="mono">05</span><b>Four-item nav</b><p>Programs, About SOL, Get Involved, Stories, with Get in Touch kept visible on every page.</p></li>
+              <li><span className="mono">06</span><b>Structure first</b><p>Lo-fi wireframes to agree on order and CTAs with the client before any visual style.</p></li>
+              <li><span className="mono">07</span><b>Extract components</b><p>A UI inventory showed every page solving the same problem differently. Stakeholders voted on the highest-impact page to pilot a system, then repeated patterns became components with documented states.</p></li>
+            </ol>
+            <div className="pgrid">
+              <figure>
+                <div className="shot"><img src="/work/sol/process-audit.webp" alt="Annotated audit of the old SoL site: green notes on credibility signals, red notes on repetitive Learn More CTAs and missing metrics." width={1191} height={670} loading="lazy" /></div>
+                <figcaption className="mono">01 · Site audit</figcaption>
+              </figure>
+              <figure>
+                <div className="shot"><img src="/work/sol/process-arch.webp" alt="System architecture: users flow into SOL, then Programs, Mentors, Impact, Community, Application Journey and Partner with us, along an Explore, Evaluate, Act scale." width={951} height={681} loading="lazy" /></div>
+                <figcaption className="mono">04 · Explore → Evaluate → Act</figcaption>
+              </figure>
+              <figure>
+                <div className="shot"><img src="/work/sol/process-ia.webp" alt="Information architecture tree: Home, Programs, About SOL, Stories, Get Involved, Get in Touch, language toggle and footer." width={1457} height={658} loading="lazy" /></div>
+                <figcaption className="mono">05 · Information architecture</figcaption>
+              </figure>
+              <figure>
+                <div className="shot"><img src="/work/sol/process-lofi.webp" alt="Grayscale low-fidelity wireframes of the Programs, Corporate Leadership and About pages." width={1457} height={658} loading="lazy" /></div>
+                <figcaption className="mono">06 · Lo-fi wireframes</figcaption>
+              </figure>
+            </div>
+          </div>
+        </section>
+
+        <section className="row">
           <p className="mono">Research</p>
           <div className="body">
             <h2>What I heard</h2>
@@ -169,35 +206,24 @@ export default function SchoolOfLeadership() {
               <li>
                 <div className="step-head">
                   <span className="mono">01</span>
-                  <h3>Made About us answer “is this real?”</h3>
+                  <h3>Designed About us to answer “is this real?”</h3>
                 </div>
                 <p>
-                  A short origin story with a timeline from Bangkok to six countries, a real photo from an Impact
-                  Leaders retreat instead of stock imagery, and the proof that was missing before: alumni, mentors, partners and countries, in numbers.
+                  The whole page, top to bottom: a mission people get in one line, an origin story with a timeline from
+                  Bangkok to six countries, real photos instead of stock imagery, the people behind SoL, and the proof that
+                  was missing before (alumni, mentors, partners and countries) on the cyan SOL Collective band.
                 </p>
                 <figure>
-                  <div className="shot">
+                  <div className="shot scroller" tabIndex={0}>
                     <img
-                      src="/work/sol/about-story.webp"
-                      alt="'Where we started' section: origin story, group photo from the Impact Leaders Retreat Bangkok 2024, and a numbered timeline."
-                      width={1400}
-                      height={1014}
+                      src="/work/sol/about-full.webp"
+                      alt="The full About us page: mission hero, origin story with timeline, values, team, the SOL Collective stats on cyan, who we work with, a closing call to action and footer."
+                      width={1200}
+                      height={5135}
                       loading="lazy"
                     />
                   </div>
-                  <figcaption className="mono">Our story and timeline</figcaption>
-                </figure>
-                <figure style={{ marginTop: 20 }}>
-                  <div className="shot">
-                    <img
-                      src="/work/sol/about-impact.webp"
-                      alt="'The SOL Collective' section with four stat cards: 100+ alumni, 40+ mentors and instructors, 40+ partner organizations, 6 countries."
-                      width={1400}
-                      height={607}
-                      loading="lazy"
-                    />
-                  </div>
-                  <figcaption className="mono">Proof in numbers</figcaption>
+                  <figcaption className="mono">The full About us page · scroll inside</figcaption>
                 </figure>
               </li>
               <li>
@@ -206,9 +232,9 @@ export default function SchoolOfLeadership() {
                   <h3>Turned Get in Touch from a blank box into a clear path.</h3>
                 </div>
                 <p>
-                  The first version was a generic form. The next added a topic so messages reach the right
-                  person. The final version also tells people up front what SoL can’t respond to, so nobody waits
-                  on a reply that won’t come.
+                  The first version was a generic form. The next added a topic so messages reach the right person,
+                  then a notice setting expectations. The final version answers the parent directly: the email address
+                  comes first, one click to copy, and the form becomes a short backup that promises a reply.
                 </p>
                 <div className="versions">
                   <figure>
@@ -225,11 +251,23 @@ export default function SchoolOfLeadership() {
                   </figure>
                   <figure>
                     <div className="shot">
-                      <img src="/work/sol/git-v3.webp" alt="Final version: a 'Before you get in touch, please be advised' box listing requests SoL can't respond to, next to the form." width={900} height={777} loading="lazy" />
+                      <img src="/work/sol/git-v3.webp" alt="Third version: a 'Before you get in touch, please be advised' box listing requests SoL can't respond to, next to the form." width={900} height={777} loading="lazy" />
                     </div>
-                    <figcaption className="mono">Final · Expectations set first</figcaption>
+                    <figcaption className="mono">v3 · Expectations set first</figcaption>
                   </figure>
                 </div>
+                <figure style={{ marginTop: 20 }}>
+                  <div className="shot">
+                    <img
+                      src="/work/sol/git-final.webp"
+                      alt="Final Get in Touch page on a cyan (#99D9F7) panel: 'Via email' with the address in a copy button, then 'Or enquiry' with name, email, 'You are a…' and message fields and a Submit button."
+                      width={1100}
+                      height={1144}
+                      loading="lazy"
+                    />
+                  </div>
+                  <figcaption className="mono">Final · Email first, form as backup · #99D9F7</figcaption>
+                </figure>
               </li>
               <li>
                 <div className="step-head">
