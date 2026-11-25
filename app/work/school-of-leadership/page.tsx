@@ -142,6 +142,22 @@ export default function SchoolOfLeadership() {
                 </span>
               </figcaption>
             </figure>
+            <h3 style={{ marginTop: 36 }}>What the old site showed</h3>
+            <p>Our team’s usability sessions on the existing site kept hitting the same wall: getting in touch.</p>
+            <div className="obs">
+              <figure>
+                <blockquote>Asked to reach out, she found a form asking for personal details with no reply time, and said she’d rather email or WhatsApp.</blockquote>
+                <figcaption className="mono">Parent of a high schooler · my session</figcaption>
+              </figure>
+              <figure>
+                <blockquote>“I am trying to find a way to contact the association but I can’t.”</blockquote>
+                <figcaption className="mono">International school director · team session</figcaption>
+              </figure>
+              <figure>
+                <blockquote>Said the site needs more calls to action: skim it and you don’t know where to go next.</blockquote>
+                <figcaption className="mono">Same director, wrap-up</figcaption>
+              </figure>
+            </div>
           </div>
         </section>
 
