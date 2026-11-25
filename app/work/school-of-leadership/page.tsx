@@ -150,7 +150,7 @@ export default function SchoolOfLeadership() {
                 <figcaption className="mono">Parent of a high schooler · my session</figcaption>
               </figure>
               <figure>
-                <blockquote>“I am trying to find a way to contact the association but I can’t.”</blockquote>
+                <blockquote>“I am trying to find a way to contact the association but I can’t seem to find it.”</blockquote>
                 <figcaption className="mono">International school director · team session</figcaption>
               </figure>
               <figure>
