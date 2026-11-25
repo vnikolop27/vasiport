@@ -319,8 +319,8 @@ export default function SchoolOfLeadership() {
           <p className="mono">Learned</p>
           <div className="body">
             <h2>What I learned.</h2>
-            <p>
-              A contact page is a promise. People didn’t mind filling in a form; they minded not knowing if anyone would
+            <p className="tbd">
+              Draft, rewrite after testing: A contact page is a promise. People didn’t mind filling in a form; they minded not knowing if anyone would
               answer. Saying up front what happens next did more than any visual change.
             </p>
           </div>
