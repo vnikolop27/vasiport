@@ -65,8 +65,8 @@ export default function SchoolOfLeadership() {
         </Link>
         <h1>School of Leadership</h1>
         <p className="lede">
-          Designing the About and Get in Touch pages for a youth leadership school, starting from a parent’s
-          questions.
+          Designing the About and Get in Touch pages for a youth leadership school, and the reusable components
+          behind them.
         </p>
 
         <dl className="meta">
@@ -84,7 +84,7 @@ export default function SchoolOfLeadership() {
           </div>
           <div>
             <dt className="mono">Skills</dt>
-            <dd>User interviews, UI design, design systems</dd>
+            <dd>User interviews, UI design, component design</dd>
           </div>
         </dl>
 
@@ -234,13 +234,73 @@ export default function SchoolOfLeadership() {
               <li>
                 <div className="step-head">
                   <span className="mono">03</span>
-                  <h3>Built on a shared system.</h3>
+                  <h3>Turned my pages into reusable parts.</h3>
                 </div>
                 <p>
-                  The team agreed on one palette and type scale, so every page reads as one SoL: blues for actions,
-                  warm accents for highlights, Please Display for headlines and Rethink Sans for body text.
+                  Instead of drawing each screen by hand, I built the pieces my pages repeat as components with
+                  states, on top of the palette and type scale the team agreed on. Anyone on the team could drop them
+                  into another page and get the same behavior.
                 </p>
-                <figure>
+                <div className="kit">
+                  <div className="kit-item kit-wide">
+                    <p className="mono kit-label">Topic dropdown · 9 variants</p>
+                    <div className="dd-row">
+                      <div className="dd-state">
+                        <div className="dd"><span className="ph-t">Select a topic</span><i /></div>
+                        <span className="mono">Empty</span>
+                      </div>
+                      <div className="dd-state">
+                        <div className="dd open"><span className="ph-t">Select a topic</span><i /></div>
+                        <ul className="dd-menu">
+                          <li>Student Programs</li>
+                          <li className="hov">Parent Questions</li>
+                          <li>Partnerships &amp; Collaboration</li>
+                          <li>Volunteer Opportunities</li>
+                          <li>Events &amp; Workshops</li>
+                          <li>Feedback</li>
+                          <li>Other</li>
+                        </ul>
+                        <span className="mono">Open</span>
+                      </div>
+                      <div className="dd-state">
+                        <div className="dd"><span>Parent Questions</span><i /></div>
+                        <span className="mono">Selected · one per topic</span>
+                      </div>
+                    </div>
+                    <p className="kit-note">
+                      Routes each message to the right person, so a parent’s question doesn’t land in the same pile as
+                      a sponsorship pitch.
+                    </p>
+                  </div>
+                  <div className="kit-item">
+                    <p className="mono kit-label">Impact card</p>
+                    <div className="impact-row">
+                      <div className="impact"><b>100+</b><span>Alumni across the globe</span></div>
+                      <div className="impact"><b>6</b><span>Countries reached</span></div>
+                    </div>
+                    <p className="kit-note">One card, any number. Built for the proof parents asked for, reusable anywhere SoL shows results.</p>
+                  </div>
+                  <div className="kit-item">
+                    <p className="mono kit-label">Calls to action · default / hover</p>
+                    <div className="cta-row">
+                      <span className="cta">Get in touch</span>
+                      <span className="cta hover">Get in touch →</span>
+                    </div>
+                    <div className="cta-row">
+                      <span className="cta2">Explore programs</span>
+                      <span className="cta2 hover">Explore programs →</span>
+                    </div>
+                    <p className="kit-note">The old site had too few next steps. These give every section one clear action.</p>
+                  </div>
+                  <div className="kit-item kit-wide">
+                    <p className="mono kit-label">Expectation notice</p>
+                    <div className="notice">
+                      <b>Before you get in touch, please be advised</b>
+                      <span>Tells people what SoL can and can’t respond to, before they write.</span>
+                    </div>
+                  </div>
+                </div>
+                <figure style={{ marginTop: 20 }}>
                   <div className="shot palette">
                     {palette.map((c) => (
                       <div key={c.hex}>
@@ -250,16 +310,10 @@ export default function SchoolOfLeadership() {
                       </div>
                     ))}
                   </div>
-                  <figcaption className="mono">Color palette, decided as a team</figcaption>
-                </figure>
-                <figure style={{ marginTop: 20 }}>
-                  <div className="shot">
-                    <img src="/work/sol/type.webp" alt="Type scale: Please Display VF headers 1 to 3, and Rethink Sans body styles." width={1380} height={520} loading="lazy" />
-                  </div>
-                  <figcaption className="mono">Type scale</figcaption>
+                  <figcaption className="mono">Palette the components use, decided as a team</figcaption>
                 </figure>
                 <p style={{ marginTop: 18 }}>
-                  For how the team turned this into reusable components, see{" "}
+                  For how the full system came together, see{" "}
                   <a href="https://www.harshitadandu.com/soldesignsystem" target="_blank" rel="noreferrer">
                     Harshita Dandu’s design system case study
                   </a>
