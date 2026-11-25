@@ -249,3 +249,4 @@ a.card:hover .frame-in img{transform:none}
 .cta2{font-weight:700;font-size:14px;text-decoration:underline;text-underline-offset:4px;padding:11px 4px}
 .notice{background:#FFE699;border:1.5px solid #1a1a1a;border-radius:10px;padding:16px 18px;display:flex;flex-direction:column;gap:6px;font-size:14px}
 @media(max-width:760px){.kit{grid-template-columns:1fr;margin-left:0}.dd-row{grid-template-columns:1fr}}
+.kit .kit-label,.kit .kit-note{margin-left:0;padding-left:0}
