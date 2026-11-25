@@ -257,8 +257,8 @@ export default function SchoolOfLeadership() {
                           <li>Partnerships &amp; Collaboration</li>
                           <li>Volunteer Opportunities</li>
                           <li>Events &amp; Workshops</li>
-                          <li>Feedback</li>
                           <li>Other</li>
+                          <li>Feedback</li>
                         </ul>
                         <span className="mono">Open</span>
                       </div>
@@ -283,8 +283,8 @@ export default function SchoolOfLeadership() {
                   <div className="kit-item">
                     <p className="mono kit-label">Calls to action · default / hover</p>
                     <div className="cta-row">
-                      <span className="cta">Get in touch</span>
-                      <span className="cta hover">Get in touch →</span>
+                      <span className="cta">Share your own story</span>
+                      <span className="cta hover">Share your own story →</span>
                     </div>
                     <div className="cta-row">
                       <span className="cta2">Explore programs</span>
