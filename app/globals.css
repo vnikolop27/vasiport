@@ -222,3 +222,10 @@ a.card:hover .frame-in img{transform:none}
 .obs blockquote{margin:0;font-size:15px;line-height:1.45}
 .obs figcaption{font-size:11px;color:var(--muted)}
 @media(max-width:760px){.obs{grid-template-columns:1fr}}
+
+.tbd{background:#fff1a8;outline:1px dashed #c9a400;border-radius:3px;padding:0 3px}
+.results{width:100%;border-collapse:collapse;margin-top:18px;font-size:15px}
+.results th{text-align:left;font-weight:400;font-size:11px;color:var(--muted);padding:0 0 10px;border-bottom:1px solid var(--line,#ddd)}
+.results td{padding:14px 0;border-bottom:1px solid var(--line,#ddd)}
+.results td:not(:first-child),.results th:not(:first-child){width:24%}
+.results .na{color:var(--muted)}

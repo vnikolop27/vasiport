@@ -65,8 +65,8 @@ export default function SchoolOfLeadership() {
         </Link>
         <h1>School of Leadership</h1>
         <p className="lede">
-          Designing the About and Get in Touch pages for a youth leadership school, starting from a parent’s
-          questions.
+          People couldn’t figure out how to reach a youth leadership school. I redesigned its About and Get in
+          Touch pages, then tested the contact path against the old site.
         </p>
 
         <dl className="meta">
@@ -84,7 +84,7 @@ export default function SchoolOfLeadership() {
           </div>
           <div>
             <dt className="mono">Skills</dt>
-            <dd>User interviews, UI design, design systems</dd>
+            <dd>User interviews, usability testing, UI design</dd>
           </div>
         </dl>
 
@@ -271,18 +271,62 @@ export default function SchoolOfLeadership() {
         </section>
 
         <section className="row">
-          <p className="mono">Next</p>
+          <p className="mono">Testing</p>
           <div className="body">
-            <h2>What I’d measure next.</h2>
+            <h2>Did it work?</h2>
             <p>
-              How many Get in Touch messages arrive by topic, and how many people who start the form finish it.
-              And whether About us visitors go on to explore programs, which would show the page is doing its job
-              of building trust.
+              I gave <span className="tbd">5</span> parents of teens the same task on the old site and the redesign:
+              “You want to ask whether your 15-year-old can join a program. Get in touch.”
+            </p>
+            <table className="results">
+              <thead>
+                <tr>
+                  <th className="mono"></th>
+                  <th className="mono">Old site</th>
+                  <th className="mono">Redesign</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Found how to get in touch</td>
+                  <td><span className="tbd">_/5</span></td>
+                  <td><b><span className="tbd">_/5</span></b></td>
+                </tr>
+                <tr>
+                  <td>Picked the right topic first try</td>
+                  <td className="na">No topic field</td>
+                  <td><b><span className="tbd">_/5</span></b></td>
+                </tr>
+                <tr>
+                  <td>Median time to send a message</td>
+                  <td><span className="tbd">_ s</span></td>
+                  <td><b><span className="tbd">_ s</span></b></td>
+                </tr>
+                <tr>
+                  <td>Knew what reply to expect</td>
+                  <td><span className="tbd">_/5</span></td>
+                  <td><b><span className="tbd">_/5</span></b></td>
+                </tr>
+              </tbody>
+            </table>
+            <p style={{ marginTop: 18 }}>
+              <span className="tbd">One or two sentences: the biggest change you saw, and one thing that still tripped people up.</span>
             </p>
           </div>
         </section>
 
-        <div className="next" style={{ cursor: "default" }}>
+        <section className="row">
+          <p className="mono">Learned</p>
+          <div className="body">
+            <h2>What I learned.</h2>
+            <p>
+              A contact page is a promise. People didn’t mind filling in a form; they minded not knowing if anyone would
+              answer. Saying up front what happens next did more than any visual change.
+            </p>
+          </div>
+        </section>
+
+<div className="next" style={{ cursor: "default" }}>
           <span>
             <span className="mono" style={{ color: "var(--muted)" }}>
               Next
