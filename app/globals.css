@@ -222,3 +222,15 @@ a.card:hover .frame-in img{transform:none}
 .obs blockquote{margin:0;font-size:15px;line-height:1.45}
 .obs figcaption{font-size:11px;color:var(--muted)}
 @media(max-width:760px){.obs{grid-template-columns:1fr}}
+
+.flow{list-style:none;padding:0;margin:20px 0 0;display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px}
+.flow li{background:var(--tint);border-radius:10px;padding:16px;display:flex;flex-direction:column;gap:6px}
+.flow li span{font-size:11px;color:var(--muted)}
+.flow li b{font-weight:500;font-size:15px}
+.flow li p{margin:0;font-size:13.5px;line-height:1.45;color:var(--muted)}
+.flow li:last-child{grid-column:1/-1}
+.pgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:20px}
+.pgrid figure{margin:0}
+.scroller{max-height:720px;overflow-y:auto;overscroll-behavior:contain}
+.scroller img{display:block}
+@media(max-width:760px){.pgrid{grid-template-columns:1fr}.scroller{max-height:520px}}
