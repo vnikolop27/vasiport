@@ -20,9 +20,9 @@ export default function HellasDirect() {
     <p className="lede">Moving the services people come back for out of the footer and into the main navigation.</p>
 
     <dl className="meta">
-      <div><dt className="mono">Product</dt><dd>Hellas Direct/ Insurance website, homepage &amp; navigation</dd></div>
-      <div><dt className="mono">Role</dt><dd>Product Design Intern, with the Design Lead</dd></div>
-      <div><dt className="mono">Tools</dt><dd>Figma, Google Analytics</dd></div>
+      <div><dt className="mono">Product</dt><dd>Homepage &amp; navigation</dd></div>
+      <div><dt className="mono">Role</dt><dd>Product Design Intern</dd></div>
+      <div><dt className="mono">Tools</dt><dd>Figma</dd></div>
       <div><dt className="mono">Skills</dt><dd>Competitive analysis, product audit, information architecture</dd></div>
     </dl>
 
@@ -128,7 +128,7 @@ export default function HellasDirect() {
             <figcaption className="mono">Live today</figcaption>
           </figure>
         </div>
-        <p className="legend mono"><span><i></i>Changed by the team</span></p>
+        <p className="legend mono"><span>Underlined: changed by the team</span></p>
         <div className="changes">
           <div className="change"><span className="before">One Insurance group</span><span className="arrow">→</span><span>Split into Vehicle and Home</span></div>
           <div className="change"><span className="before">ENFIA under Info</span><span className="arrow">→</span><span>Moved under Home</span></div>
