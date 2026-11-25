@@ -51,9 +51,9 @@ export const projects: Project[] = [
   {
     slug: "school-of-leadership",
     title: "School of Leadership",
-    subtitle: "Redesigning a leadership school’s site for five audiences",
-    tags: ["UX research", "Website redesign", "Education"],
-    inProgress: true,
+    subtitle: "Designing About and Get in Touch pages that help parents trust a new program",
+    tags: ["User interviews", "UI design", "Design systems"],
+    href: "/work/school-of-leadership",
     tint: "#e3e7ee",
   },
 ];
