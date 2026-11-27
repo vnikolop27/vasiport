@@ -258,6 +258,18 @@ export default function SchoolOfLeadership() {
               seeing pages, so Harshita ran a workshop with design, engineering, content and the founder to vote on
               the highest-impact page. The homepage won, and became the pilot: start small, prove value, then scale.
             </p>
+            <figure style={{ margin: "8px 0 8px" }}>
+              <div className="shot">
+                <img src="/work/sol/pilot-scoring.webp" alt="System pilot scoring table: Homepage, Programs, About us, Corporate partnership and Individual program pages scored on business impact, technical feasibility, marketing potential, common component potential, common pattern potential and scope. Homepage averages 7.8, the highest." width={1764} height={1066} loading="lazy" />
+              </div>
+              <figcaption className="mono">The pilot vote · each page scored 1–10 on six criteria</figcaption>
+            </figure>
+            <p>
+              We scored five candidate pages on six criteria. The homepage came out on top (7.8) mostly because it
+              shares more components with the rest of the site than any other page (9/10): fix it, and you fix pieces
+              of every page. My About us page scored lowest (5.0), so instead of piloting the system, it was built
+              from the parts the pilot produced.
+            </p>
             <p>
               Patterns the pilot repeated became components with documented states. Those components then carried
               over to the rest of the site, including my About us and Get in Touch pages.
@@ -318,7 +330,7 @@ export default function SchoolOfLeadership() {
             </figure>
             <h3 style={{ marginTop: 36 }}>What the old site showed</h3>
             <p>Our team’s usability sessions on the existing site kept hitting the same wall: getting in touch.</p>
-            <div className="obs">
+            <div className="obs sticky">
               <figure>
                 <blockquote>Asked to reach out, she found a form asking for personal details with no reply time, and said she’d rather email or WhatsApp.</blockquote>
                 <figcaption className="mono">Parent of a high schooler · my session</figcaption>
@@ -328,7 +340,7 @@ export default function SchoolOfLeadership() {
                 <figcaption className="mono">International school director · team session</figcaption>
               </figure>
               <figure>
-                <blockquote>Said the site needs more calls to action: skim it and you don’t know where to go next.</blockquote>
+                <blockquote>“Needs more CTA. If people don’t pay attention, they might lose something and don’t know where to go.”</blockquote>
                 <figcaption className="mono">Same director, wrap-up</figcaption>
               </figure>
             </div>
