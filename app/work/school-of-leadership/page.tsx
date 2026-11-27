@@ -86,6 +86,14 @@ const fails = [
 ];
 const oldButtons = ["lime", "mint", "salmon", "sky", "peach", "signup", "gray"];
 
+
+const formNotes = [
+  { id: "photo", side: "left", y: 47.7, len: 36, text: "A real SoL event, not stock: the proof of real work that parents said builds trust." },
+  { id: "intro", side: "right", y: 29.6, len: 29, text: "Names both audiences, young leaders and organizations, so everyone knows the form is for them." },
+  { id: "you", side: "right", y: 59.6, len: 163, text: "“You are a…” routes each message to the right person at SoL." },
+  { id: "cta", side: "right", y: 84.3, len: 143, text: "The same primary button from the pilot kit, used on every page." },
+];
+
 /* eslint-disable @next/next/no-img-element */
 export default function SchoolOfLeadership() {
   return (
@@ -274,30 +282,33 @@ export default function SchoolOfLeadership() {
               Patterns the pilot repeated became components with documented states. Those components then carried
               over to the rest of the site, including my About us and Get in Touch pages.
             </p>
-            <div className="before-after">
-              <figure>
-                <div className="ba-box">
-                  <div className="btn-row small">
-                    {oldButtons.map((b) => (
-                      <img key={b} src={`/work/sol/btn-${b}.webp`} alt="" height={36} loading="lazy" />
-                    ))}
-                  </div>
-                </div>
-                <figcaption className="mono">Before · 18+ button variations</figcaption>
-              </figure>
-              <span className="ba-arrow" aria-hidden="true">→</span>
-              <figure>
-                <div className="ba-box">
-                  <img src="/work/sol/pilot-buttons.webp" alt="Two button components: a primary blue button and an underlined secondary link, each with default and hover states." width={498} height={166} loading="lazy" style={{ maxWidth: 300 }} />
-                </div>
-                <figcaption className="mono">After · 2 components, default + hover</figcaption>
-              </figure>
-            </div>
             <figure style={{ marginTop: 24 }}>
               <div className="shot scroller" tabIndex={0}>
                 <img src="/work/sol/new-home-full.webp" alt="The pilot homepage: blue hero, three pathway cards, who we are, impact numbers on cyan, testimonials, partner logos, stories, and a get-in-touch form." width={1200} height={4958} loading="lazy" />
               </div>
               <figcaption className="mono">The pilot · new homepage · scroll inside</figcaption>
+            </figure>
+          </div>
+          <div className="wide">
+            <p className="body-note">
+              The pilot’s closing form uses the same fields as my Get in Touch page, so a parent can reach SoL from the
+              homepage without hunting for a contact link.
+            </p>
+            <figure className="aform">
+              <div className="aform-stage">
+                <img src="/work/sol/pilot-form.webp" alt="Homepage contact form: a photo of a speaker at an SoL event beside the heading 'The future is built together.', fields for full name, email, 'You are a…' and message, and a Get in Touch button." width={1280} height={746} loading="lazy" />
+                {formNotes.map((n) => (
+                  <div key={n.id} className={`aform-note ${n.side}`} style={{ top: `${n.y}%` }}>
+                    <span className="aform-line" style={n.side === "left" ? { left: "100%", width: `${n.len}%` } : { right: "100%", width: `${n.len}%` }} />
+                    <p>{n.text}</p>
+                  </div>
+                ))}
+                <div className="aform-red" style={{ top: "37.2%" }}><b>6</b></div>
+                <div className="aform-red" style={{ top: "41.6%" }}><b>59</b></div>
+                <div className="aform-red" style={{ top: "46.2%" }}><b>24</b></div>
+                <div className="aform-red" style={{ top: "84.3%", left: "45.6%" }}><b>56</b></div>
+              </div>
+              <figcaption className="mono">One form for every audience: students, parents, schools and partners · spacing in px</figcaption>
             </figure>
           </div>
         </section>
